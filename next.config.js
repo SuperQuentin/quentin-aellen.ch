@@ -10,6 +10,9 @@ const nextConfig = {
     // a non-locale prefixed path e.g. `/hello`
     defaultLocale: 'fr-CH',
   },
+  images: {
+    domains: ['unsplash.com', 'source.unsplash.com']
+  }
 }
 
 module.exports = nextConfig
