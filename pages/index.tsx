@@ -5,9 +5,9 @@ import { Card, GradientOrientation } from '../components/Welcome/Cards'
 
 const Home: NextPageWithLayout = () => {
   return (
-    <section className="flex flex-col items-center justify-center min-h-screen">
-      <div className="px-4 h-[736px] w-full max-w-7xl">
-        <div className="flex flex-col h-full gap-4 md:flex-row">
+    <section className="flex flex-col items-center justify-center min-h-screen p-5">
+      <div className="flex flex-col justify-center flex-1 w-full px-4 max-w-7xl">
+        <div className="flex flex-1 gap-4 md:flex-row max-h-[720px]">
           <Card href="#" imageSrc="/images/moto.jpg">
             <div className="flex flex-col-reverse items-end h-full">
               <h2 className="font-sans text-3xl text-white fond-bold">À propos de moi</h2>
