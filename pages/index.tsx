@@ -8,26 +8,26 @@ const Home: NextPageWithLayout = () => {
     <section className="flex flex-col items-center justify-center min-h-screen">
       <div className="px-4 h-[736px] w-full max-w-7xl">
         <div className="flex flex-col h-full gap-4 md:flex-row">
-          <Card imageSrc="/images/moto.jpg">
+          <Card href="#" imageSrc="/images/moto.jpg">
             <div className="flex flex-col-reverse items-end h-full">
               <h2 className="font-sans text-3xl text-white fond-bold">À propos de moi</h2>
             </div>
           </Card>
 
           <div className="flex flex-col flex-1 gap-4">
-            <Card gradientOrientation={GradientOrientation.Up}>
+            <Card href="#" gradientOrientation={GradientOrientation.Up}>
               <div className="flex flex-col h-full">
                 <h2 className="font-sans text-3xl text-white fond-bold">Projets</h2>
               </div>
             </Card>
 
             <div className="flex flex-col flex-1 gap-4 md:flex-row">
-              <Card gradientOrientation={GradientOrientation.Up}>
+              <Card href="/blog" gradientOrientation={GradientOrientation.Up}>
                 <div className="flex flex-col h-full">
                   <h2 className="font-sans text-3xl text-white fond-bold">Blog</h2>
                 </div>
               </Card>
-              <Card gradientOrientation={GradientOrientation.Up}>
+              <Card href="#" gradientOrientation={GradientOrientation.Up}>
                 <div className="flex flex-col h-full">
                   <h2 className="font-sans text-3xl text-white fond-bold">Contact</h2>
                 </div>
