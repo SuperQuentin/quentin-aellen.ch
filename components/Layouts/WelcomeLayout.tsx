@@ -1,5 +1,6 @@
 import React, { ReactElement } from "react"
 import Head from 'next/head'
+import { ParticlesBackground } from "../Welcome/ParticlesBackground"
 
 export const WelcomeLayout = ({ children }: { children: ReactElement }) => {
     return (
@@ -10,6 +11,7 @@ export const WelcomeLayout = ({ children }: { children: ReactElement }) => {
                 <link rel="icon" href="/favicon.ico" />
             </Head>
             <main className="bg-blue-300">
+                <ParticlesBackground />
                 {children}
             </main>
             <footer>
