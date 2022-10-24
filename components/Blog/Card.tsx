@@ -29,7 +29,7 @@ export const Card = (props: CardProps) => {
             <a className="flex flex-col flex-1 col-span-4 transition bg-white shadow-2xl group rounded-3xl hover:cursor-pointer hover:scale-95 active:scale-90">
                 <div className="relative h-40">
                     <div className="absolute inset-0 z-10 bg-gradient-to-t from-black via-transparent to-transparent"></div>
-                    <Image className="absolute rounded-t-3xl" src={imageSrc ?? "https://source.unsplash.com/_KsnSQoKhUQ"} layout="fill" objectFit="cover" />
+                    <Image className="absolute rounded-t-3xl" src={imageSrc ?? "https://source.unsplash.com/_KsnSQoKhUQ"} layout="fill" objectFit="cover" alt={title + " card cover image"} />
                 </div>
 
                 <div className="relative z-0 px-5 pt-3 pb-6 space-y-2">
