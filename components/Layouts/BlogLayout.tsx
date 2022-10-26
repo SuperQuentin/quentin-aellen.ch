@@ -14,7 +14,7 @@ export const BlogLayout = ({ children }: { children: ReactElement }) => {
             <main className="min-h-screen space-y-4 bg-blue-300">
                 <div className="relative z-0 h-48 md:mb-12 md:h-96">
                     <div className="absolute inset-0 -z-10 bg-gradient-to-t from-black via-transparent to-transparent"></div>
-                    <Image className="absolute rounded-t-3xl -z-20" src={"https://source.unsplash.com/_KsnSQoKhUQ"} layout="fill" objectFit="cover" alt="Blog banner" />
+                    <Image className="absolute -z-20" src={"https://source.unsplash.com/_KsnSQoKhUQ"} layout="fill" objectFit="cover" alt="Blog banner" />
 
                     <div className="relative flex flex-col-reverse h-full px-4 py-6 mx-auto max-w-7xl">
                         <div className="flex flex-row-reverse items-end justify-between ">
