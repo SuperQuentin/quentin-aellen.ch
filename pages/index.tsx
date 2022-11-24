@@ -8,7 +8,7 @@ const Home: NextPageWithLayout = () => {
     <section className="flex flex-col items-center justify-center min-h-screen p-5">
       <div className="flex flex-col justify-center flex-1 w-full md:px-4 max-w-7xl">
         <div className="flex flex-col flex-1 gap-4 md:flex-row max-h-[720px]">
-          <Card href="#" imageSrc="/images/moto.jpg" title="About me">
+          <Card href="/me" imageSrc="/images/moto.jpg" title="About me">
             <div className="flex flex-col-reverse items-end h-full">
               <h2 className="font-sans text-3xl text-white fond-bold">À propos de moi</h2>
             </div>
