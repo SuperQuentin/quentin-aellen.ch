@@ -2,29 +2,39 @@ import { ReactElement } from "react";
 import { NextPageWithLayout } from "../_app";
 import { BlogLayout } from "../../components/Layouts/BlogLayout";
 import { Card } from "../../components/Blog/Card";
+import { getBlogArticles } from "../../lib/blog/articles";
 
-const Blog: NextPageWithLayout = () => {
-    return (
-        <>
-            <Card href="#" title="l'article du futur t'as vu c'est trop bien voilà c'est tous pour mois">
-                <div></div>
+const Blog: NextPageWithLayout = ({ articles }: any) => {
+  return (
+    <>
+      {articles ? (
+        articles.map((article: any) => {
+          return (
+            <Card key={article.id} href="#" title={article.title}>
+              <div></div>
             </Card>
+          );
+        })
+      ) : (
+        <></>
+      )}
+    </>
+  );
+};
 
-            <Card href="#" title="l'article du futur">
-                <div>test</div>
-            </Card>
+export const getStaticProps = async () => {
+  const data = await getBlogArticles();
 
-            <Card href="#" title="l'article du futur">
-                <div>test</div>
-            </Card>
-        </>
-    )
-}
+  return {
+    props: {
+      articles: data,
+    },
+    revalidate: 1,
+  };
+};
 
 Blog.getLayout = function getLayout(page: ReactElement) {
-    return (
-        <BlogLayout>{page}</BlogLayout>
-    )
-}
+  return <BlogLayout>{page}</BlogLayout>;
+};
 
 export default Blog;

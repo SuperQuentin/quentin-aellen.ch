@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@notionhq/client": "^2.2.3",
     "clsx": "^1.2.1",
     "framer-motion": "^7.5.3",
     "next": "12.3.1",
