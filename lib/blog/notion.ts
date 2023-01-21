@@ -19,6 +19,7 @@ export function getPageMetaData(post: any) {
   return {
     id: post.id,
     title: post.properties.Name.title[0].plain_text,
+    cover: post.cover.external?.url ?? post.cover.file?.url,
     tags: getTags(post.properties.Tags.multi_select),
     description: post.properties.Description.rich_text[0].plain_text,
     date: post.last_edited_time,

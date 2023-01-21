@@ -10,7 +10,12 @@ const Blog: NextPageWithLayout = ({ articles }: any) => {
       {articles ? (
         articles.map((article: any) => {
           return (
-            <Card key={article.id} href="#" title={article.title}>
+            <Card
+              key={article.id}
+              href="#"
+              title={article.title}
+              imageSrc={article.cover}
+            >
               <div></div>
             </Card>
           );
@@ -29,7 +34,7 @@ export const getStaticProps = async () => {
     props: {
       articles: data,
     },
-    revalidate: 60,
+    revalidate: 1,
   };
 };
 
