@@ -29,7 +29,7 @@ export const getStaticProps = async () => {
     props: {
       articles: data,
     },
-    revalidate: 1,
+    revalidate: 60,
   };
 };
 
