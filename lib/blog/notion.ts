@@ -14,8 +14,6 @@ export function getPageMetaData(post: any) {
     return allTags;
   };
 
-  console.log(post);
-
   return {
     id: post.id,
     title: post.properties.Name.title[0].plain_text,
