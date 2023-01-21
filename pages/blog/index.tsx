@@ -16,7 +16,7 @@ const Blog: NextPageWithLayout = ({ articles }: any) => {
               title={article.title}
               imageSrc={article.cover}
             >
-              <div></div>
+              <div>{article.description}</div>
             </Card>
           );
         })
@@ -34,7 +34,7 @@ export const getStaticProps = async () => {
     props: {
       articles: data,
     },
-    revalidate: 1,
+    revalidate: 60,
   };
 };
 
