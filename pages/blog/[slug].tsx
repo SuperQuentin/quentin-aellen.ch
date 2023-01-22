@@ -6,7 +6,7 @@ import { NextPageWithLayout } from "../_app";
 
 const BlogArticle: NextPageWithLayout = (props: any) => {
   return (
-    <div className="col-span-12">
+    <div className="flex justify-center col-span-12">
       <article className="prose lg:prose-xl">
         <ReactMarkdown>{props.article.markdown}</ReactMarkdown>
       </article>
