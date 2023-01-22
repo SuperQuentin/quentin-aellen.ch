@@ -10,11 +10,14 @@
   },
   "dependencies": {
     "@notionhq/client": "^2.2.3",
+    "@tailwindcss/typography": "^0.5.9",
     "clsx": "^1.2.1",
     "framer-motion": "^7.5.3",
     "next": "12.3.1",
+    "notion-to-md": "^2.5.5",
     "react": "18.2.0",
     "react-dom": "18.2.0",
+    "react-markdown": "^8.0.5",
     "react-particles": "^2.3.3",
     "tsparticles": "^2.3.4"
   },

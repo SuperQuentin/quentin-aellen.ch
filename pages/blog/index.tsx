@@ -12,7 +12,7 @@ const Blog: NextPageWithLayout = ({ articles }: any) => {
           return (
             <Card
               key={article.id}
-              href="#"
+              href={"/blog/" + article.slug}
               title={article.title}
               imageSrc={article.cover}
             >
