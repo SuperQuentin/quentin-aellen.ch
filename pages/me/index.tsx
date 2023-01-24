@@ -7,9 +7,18 @@ const Me: NextPageWithLayout = () => {
         <>
             <section className="flex flex-col-reverse px-4 mx-auto space-y-4 space-y-reverse max-w-7xl md:flex-row md:space-x-4 md:space-y-0">
                 <div className="flex-1 h-full px-8 py-6 rounded-3xl bg-neutral-100">
-                    <h2 className="text-xl font-bold capitalize">
+                    <h2 className="pb-2 text-xl font-bold capitalize">
                         Tools
                     </h2>
+
+                    <div className="flex flex-wrap justify-between gap-5 justify-items-stretch">
+                        <div className="w-32 h-32 bg-violet-500">   </div>
+                        <div className="w-32 h-32 bg-violet-500">   </div>
+                        <div className="w-32 h-32 bg-violet-500">   </div>
+                        <div className="w-32 h-32 bg-violet-500">   </div>
+                        <div className="w-32 h-32 bg-violet-500">   </div>
+                        <div className="w-32 h-32 bg-violet-500">   </div>
+                    </div>
                 </div>
                 <div className="h-full px-8 py-6 md:w-4/12 rounded-3xl bg-neutral-100">
                     <h2 className="text-xl font-bold capitalize">
