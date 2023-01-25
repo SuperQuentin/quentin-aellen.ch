@@ -26,7 +26,7 @@ export const BlogLayout = ({ children }: { children: ReactElement }) => {
             alt="Blog banner"
           />
 
-          <div className="relative flex flex-col-reverse h-full px-4 py-6 mx-auto max-w-7xl">
+          <div className="relative flex flex-col-reverse h-full px-10 py-6 mx-auto max-w-7xl">
             <div className="flex flex-row-reverse items-end justify-between ">
               <Link
                 href={children.props.article ? "/blog/" : "/"}
@@ -79,7 +79,7 @@ export const BlogLayout = ({ children }: { children: ReactElement }) => {
             </div>
           </div>
         </div>
-        <div className="flex flex-col gap-5 px-4 mx-auto md:grid-rows-2 md:grid md:grid-cols-12 max-w-7xl">
+        <div className="flex flex-col gap-5 px-10 mx-auto md:grid-rows-2 md:grid md:grid-cols-12 max-w-7xl">
           {children}
         </div>
       </main>
