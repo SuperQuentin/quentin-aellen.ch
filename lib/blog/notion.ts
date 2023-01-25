@@ -8,7 +8,10 @@ const notion = new Client({
 export function getPageMetaData(post: any) {
   const getTags = (tags: any) => {
     const allTags = tags.map((tag: any) => {
-      return tag.name;
+      return {
+        ...tag,
+        color: getColor(tag.color),
+      };
     });
 
     return allTags;
@@ -23,6 +26,24 @@ export function getPageMetaData(post: any) {
     date: post.last_edited_time,
     slug: post.properties.Slug.rich_text[0].plain_text,
   };
+}
+
+export function getColor(color: string) {
+  switch (color) {
+    case "pink":
+      color = "#f30b9e";
+      break;
+    case "green":
+      color = "#0bf31b";
+      break;
+    case "red":
+      color = "#f30b0b";
+      break;
+    default:
+      color = "#F39d0b";
+  }
+
+  return color;
 }
 
 export default notion;

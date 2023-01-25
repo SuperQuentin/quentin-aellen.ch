@@ -14,6 +14,7 @@ const Blog: NextPageWithLayout = ({ articles }: any) => {
               key={article.id}
               href={"/blog/" + article.slug}
               title={article.title}
+              tags={article.tags}
               imageSrc={article.cover}
             >
               <div>{article.description}</div>

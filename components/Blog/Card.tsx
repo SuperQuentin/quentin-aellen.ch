@@ -16,12 +16,13 @@ interface CardProps {
   children: ReactElement;
   href: string;
   title: string;
+  tags?: Array<any>;
   imageSrc?: string;
   gradientOrientation?: GradientOrientation;
 }
 
 export const Card = (props: CardProps) => {
-  const { children, href, title, imageSrc, gradientOrientation } = props;
+  const { children, href, title, tags, imageSrc, gradientOrientation } = props;
 
   return (
     <Link href={href} title={title}>
@@ -42,6 +43,18 @@ export const Card = (props: CardProps) => {
           <h2 className="text-2xl font-bold truncate group-hover:text-orange-600">
             {title}
           </h2>
+          <div className="flex space-x-1 wrap">
+            {tags?.map((tag) => (
+              <div
+                key={tag}
+                className={
+                  "px-2 text-sm font-semibold bg-orange-200 rounded-full w-fit"
+                }
+              >
+                {tag.name}
+              </div>
+            ))}
+          </div>
           <div className="h-16 overflow-hidden md:h-36 ">{children}</div>
         </div>
       </a>
