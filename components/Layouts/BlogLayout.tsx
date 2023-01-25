@@ -11,7 +11,7 @@ export const BlogLayout = ({ children }: { children: ReactElement }) => {
         <meta name="description" content="Quentin Aellen portfolio blog" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main className="min-h-screen space-y-4 bg-blue-300">
+      <main className="min-h-screen space-y-4 bg-orange-100">
         <div className="relative z-0 h-48 md:mb-12 md:h-96">
           <div className="absolute inset-0 -z-10 bg-gradient-to-t from-black via-transparent to-transparent"></div>
           <div className="absolute inset-0 bg-black -z-30"></div>
