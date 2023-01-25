@@ -11,10 +11,13 @@ const nextConfig = {
     defaultLocale: 'fr-CH',
   },
   images: {
-    domains: ['unsplash.com', 'source.unsplash.com'],
+    domains: ['www.notion.so'],
     remotePatterns: [{
-      protocol: "https",
-      hostname: "s3.*.amazonaws.com"
+      protocol: 'https',
+      hostname: 's3.*.amazonaws.com'
+    },{
+      protocol: 'https',
+      hostname: '*.unsplash.com'
     }]
   }
 }
