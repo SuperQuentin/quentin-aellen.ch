@@ -1,4 +1,4 @@
-import { Children, ReactElement } from "react";
+import { Children, ReactElement, useState } from "react";
 
 import Image from "next/image";
 
@@ -23,18 +23,34 @@ interface CardProps {
 
 export const Card = (props: CardProps) => {
   const { children, href, title, tags, imageSrc, gradientOrientation } = props;
+  const [loading, setLoading] = useState(true);
 
   return (
     <Link href={href} title={title}>
       <a className="flex flex-col flex-1 col-span-4 transition bg-white shadow-2xl group rounded-3xl hover:cursor-pointer hover:scale-95 active:scale-90">
         <div className="relative h-40">
           <div className="absolute inset-0 z-10 bg-gradient-to-t from-black via-transparent to-transparent"></div>
+          {loading ? (
+            <Image
+              className="absolute z-0 rounded-t-3xl animate-pulse"
+              src="/images/lazy_blur.jpg"
+              layout="fill"
+              objectFit="cover"
+              alt={title + " card cover image"}
+            />
+          ) : (
+            <></>
+          )}
+
           <Image
             className="absolute z-0 rounded-t-3xl"
             src={imageSrc ?? "https://source.unsplash.com/_KsnSQoKhUQ"}
             layout="fill"
             objectFit="cover"
-            alt={title + " card cover image"}
+            onLoadingComplete={() => {
+              setLoading(false);
+            }}
+            alt={"lazy load card cover image"}
           />
         </div>
 

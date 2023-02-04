@@ -1,9 +1,10 @@
-import React, { ReactElement } from "react";
+import React, { ReactElement, useState } from "react";
 import Head from "next/head";
 import Image from "next/image";
 import Link from "next/link";
 
 export const BlogLayout = ({ children }: { children: ReactElement }) => {
+  const [loading, setLoading] = useState(true);
   return (
     <>
       <Head>
@@ -15,6 +16,19 @@ export const BlogLayout = ({ children }: { children: ReactElement }) => {
         <div className="relative z-0 h-48 md:mb-12 md:h-96">
           <div className="absolute inset-0 -z-10 bg-gradient-to-t from-black via-transparent to-transparent"></div>
           <div className="absolute inset-0 bg-black -z-30"></div>
+
+          {loading ? (
+            <Image
+              className="absolute z-0 rounded-t-3xl animate-pulse"
+              src="/images/lazy_blur_big.jpg"
+              layout="fill"
+              objectFit="cover"
+              alt={"lazy cover image"}
+            />
+          ) : (
+            <></>
+          )}
+
           <Image
             className="absolute -z-20"
             src={
@@ -24,6 +38,9 @@ export const BlogLayout = ({ children }: { children: ReactElement }) => {
             layout="fill"
             objectFit="cover"
             alt="Blog banner"
+            onLoadingComplete={() => {
+              setLoading(false);
+            }}
           />
 
           <div className="relative flex flex-col-reverse h-full px-10 py-6 mx-auto max-w-7xl">
