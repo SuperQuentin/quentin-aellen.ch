@@ -1,0 +1,74 @@
+[
+  {
+    "name": "Docker",
+    "alt": "docker logo",
+    "path": "/images/tools/vertical-logo-monochromatic.webp"
+  },
+  {
+    "name": "NextJS",
+    "alt": "nextjs logo",
+    "path": "/images/tools/Nextjs-logo.svg"
+  },
+  {
+    "name": "Typescript",
+    "alt": "Typescript logo",
+    "path": "/images/tools/ts-logo-512.svg"
+  },
+  {
+    "name": "CSS_3",
+    "alt": "css 3 logo",
+    "path": "/images/tools/CSS_3.svg"
+  },
+  {
+    "name": "GIT",
+    "alt": "git logo",
+    "path": "/images/tools/Git-logo.svg"
+  },
+  {
+    "name": "Github",
+    "alt": "github logo",
+    "path": "/images/tools/github-mark.svg"
+  },
+  {
+    "name": "HTML_5",
+    "alt": "html 5 logo",
+    "path": "/images/tools/HTML5.svg"
+  },
+  {
+    "name": "Laravel",
+    "alt": "laravel logo",
+    "path": "/images/tools/Laravel.svg"
+  },
+  {
+    "name": "MySQL",
+    "alt": "mysql logo",
+    "path": "/images/tools/MySQL.svg"
+  },
+  {
+    "name": "NET_Core",
+    "alt": "net core logo",
+    "path": "/images/tools/NET_Core_logo.svg"
+  },
+
+  {
+    "name": "PHP-logo",
+    "alt": "php logo",
+    "path": "/images/tools/PHP-logo.svg"
+  },
+  {
+    "name": "Postgresql",
+    "alt": "Postgresql logo",
+    "path": "/images/tools/Postgresql_elephant.svg"
+  },
+  {
+    "name": "Tailwindcss",
+    "alt": "tailwindcss logo",
+    "path": "/images/tools/tailwindcss-mark.svg"
+  },
+
+  {
+    "name": "Javascript",
+    "alt": "javascript logo",
+    "path": "/images/tools/Unofficial_Javascript_logo_2.svg"
+  }
+]

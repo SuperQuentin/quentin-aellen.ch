@@ -9,7 +9,8 @@ export const BlogLayout = ({ children }: { children: ReactElement }) => {
     <>
       <Head>
         <title>Quentin Aellen</title>
-        <meta name="description" content="Quentin Aellen portfolio blog" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="description" content="Quentin Aellen - blog" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className="min-h-screen space-y-4 bg-orange-100">
