@@ -47,7 +47,7 @@
   {
     "name": "NET_Core",
     "alt": "net core logo",
-    "path": "/images/tools/NET_Core_logo.svg"
+    "path": "/images/tools/NET_Core_Logo.svg"
   },
 
   {
@@ -69,6 +69,6 @@
   {
     "name": "Javascript",
     "alt": "javascript logo",
-    "path": "/images/tools/Unofficial_Javascript_logo_2.svg"
+    "path": "/images/tools/Unofficial_JavaScript_logo_2.svg"
   }
 ]
