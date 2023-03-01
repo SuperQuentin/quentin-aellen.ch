@@ -2,73 +2,87 @@
   {
     "name": "Docker",
     "alt": "docker logo",
-    "path": "/images/tools/vertical-logo-monochromatic.webp"
+    "path": "/images/tools/vertical-logo-monochromatic.webp",
+    "url": "https://www.docker.com/"
   },
   {
     "name": "NextJS",
     "alt": "nextjs logo",
-    "path": "/images/tools/Nextjs-logo.svg"
+    "path": "/images/tools/Nextjs-logo.svg",
+    "url": "https://nextjs.org/"
   },
   {
     "name": "Typescript",
     "alt": "Typescript logo",
-    "path": "/images/tools/ts-logo-512.svg"
+    "path": "/images/tools/ts-logo-512.svg",
+    "url": "https://www.typescriptlang.org/"
   },
   {
     "name": "CSS_3",
     "alt": "css 3 logo",
-    "path": "/images/tools/CSS_3.svg"
+    "path": "/images/tools/CSS_3.svg",
+    "url": "https://developer.mozilla.org/fr/docs/Web/CSS"
   },
   {
     "name": "GIT",
     "alt": "git logo",
-    "path": "/images/tools/Git-logo.svg"
+    "path": "/images/tools/Git-logo.svg",
+    "url": "https://git-scm.com/"
   },
   {
     "name": "Github",
     "alt": "github logo",
-    "path": "/images/tools/github-mark.svg"
+    "path": "/images/tools/github-mark.svg",
+    "url": "https://github.com/SuperQuentin"
   },
   {
     "name": "HTML_5",
     "alt": "html 5 logo",
-    "path": "/images/tools/HTML5.svg"
+    "path": "/images/tools/HTML5.svg",
+    "url": "https://developer.mozilla.org/fr/docs/Web/HTML"
   },
   {
     "name": "Laravel",
     "alt": "laravel logo",
-    "path": "/images/tools/Laravel.svg"
+    "path": "/images/tools/Laravel.svg",
+    "url": "https://laravel.com/"
   },
   {
     "name": "MySQL",
     "alt": "mysql logo",
-    "path": "/images/tools/MySQL.svg"
+    "path": "/images/tools/MySQL.svg",
+    "url": "https://www.mysql.com/"
   },
   {
     "name": "NET_Core",
     "alt": "net core logo",
-    "path": "/images/tools/NET_Core_Logo.svg"
+    "path": "/images/tools/NET_Core_Logo.svg",
+    "url": "https://dotnet.microsoft.com/en-us/download"
   },
 
   {
     "name": "PHP-logo",
     "alt": "php logo",
-    "path": "/images/tools/PHP-logo.svg"
+    "path": "/images/tools/PHP-logo.svg",
+    "url": "https://www.php.net/"
   },
   {
     "name": "Postgresql",
     "alt": "Postgresql logo",
-    "path": "/images/tools/Postgresql_elephant.svg"
+    "path": "/images/tools/Postgresql_elephant.svg",
+    "url": "https://www.postgresql.org/"
   },
   {
     "name": "Tailwindcss",
     "alt": "tailwindcss logo",
-    "path": "/images/tools/tailwindcss-mark.svg"
+    "path": "/images/tools/tailwindcss-mark.svg",
+    "url": "https://tailwindcss.com/"
   },
 
   {
     "name": "Javascript",
     "alt": "javascript logo",
-    "path": "/images/tools/Unofficial_JavaScript_logo_2.svg"
+    "path": "/images/tools/Unofficial_JavaScript_logo_2.svg",
+    "url": "https://developer.mozilla.org/fr/docs/Web/JavaScript"
   }
 ]

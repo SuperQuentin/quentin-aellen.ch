@@ -15,8 +15,8 @@ const Me: NextPageWithLayout = () => {
           <h2 className="pb-2 text-xl font-bold capitalize">Tools</h2>
 
           <div className="grid grid-cols-2 gap-3 md:grid-cols-5 ">
-            {toolsLogo.map(({ name, alt, path }) => {
-              return <Logo key={name} alt={alt} src={path} />;
+            {toolsLogo.map(({ name, alt, path, url }) => {
+              return <Logo key={name} alt={alt} src={path} url={url} />;
             })}
           </div>
         </div>
